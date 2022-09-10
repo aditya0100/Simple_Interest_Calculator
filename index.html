@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web app- Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="math.js"></script>
+</head>
+
+<body>
+    <div class="full">
+        <h1>Simple Interest Calculator</h1>
+        <div class="container">
+            <div id="amt" class="input">
+                <Label id="amts">Amount</Label>
+                <input id="amount" type="number" name="principal">
+            </div>
+            <div id="interest" class="input">
+                <Label id="in">Interest rate</Label>
+                <input type="range" min="1" max="20" value="0" step="0.01" class="slider" id="myRange">
+                <span id="percentageSpan">0%</span>
+            </div>
+            <div id="yrs" class="input">
+                <Label>No. of years</Label>
+                <select name="years" id="years">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    <option value=10>10</option>
+                </select>
+            </div>
+            <button id="btn">Compute Interest</button>
+
+            <div id="display">
+            </div>
+        </div>
+        <footer>
+            &copy; Everyone can get rich <br> This calculator belongs to Aditya Raj Yadav
+        </footer>
+    </div>
+</body>
+
+</html>
